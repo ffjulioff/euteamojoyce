@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="estilo.css">
+    <title>To you, Bae</title>
+</head>
+<body>
+    <div class="banner">
+    <video autoplay="" loop="" >
+        <source src="gp.mp4" type="video/mp4">
+    </video>
+    
+    <div id="gp"></div>
+    <script type="text/javascript"> 
+        let gp = document.querySelector('#gp')
+        window.addEventListener('scroll', function(){
+            var value = window.scrollY
+            gp.style.backgroundSize = 100 + value +"px"
+
+        })
+    </script>
+</body>
+</html>
